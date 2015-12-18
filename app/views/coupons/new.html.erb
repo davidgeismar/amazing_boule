@@ -256,9 +256,9 @@
                 <h2 class="modal-title text-center" id="myModalLabel">Félicitations !</h2>
               </div>
               <div class="modal-body text-center">
-                Vous recevrez dans quelques minutes, votre coupon B2B pour une réduction de -50% en magasin.
-                <br>
-                Vous pouvez également pré-commander dès maintenant votre jean B2B <strong>pour seulement 40€</strong> (120€ en magasin) et venir l'essayer et le récupérer directement en boutique.
+                <p>Vous recevrez dans quelques minutes, votre coupon B2B pour une réduction de -50% en magasin.</p>
+
+                <p class="preorder">Vous pouvez également pré-commander dès maintenant votre jean B2B <strong>pour seulement 40€</strong> (120€ en magasin) et venir l'essayer et le récupérer directement en boutique.</p>
 
 
                 <!-- plutot garder stripe classic ==> mettre le bouton stripe dans le form ou je veux que le token de stripe soit envoyé le faire en ajax remote true et on success afficher une popup -->
@@ -272,7 +272,10 @@ stripe customized -->
                   data-name="B2B jeans"
                   data-image= "../assets/images/butt-icon.svg"
                   data-amount="4000"
-                  data-currency="EUR"></script>
+                  data-currency="EUR"
+                  data-label= "Faites plaisir à vos fesses !"
+
+                  ></script>
              <!--  <div class="btn btn-primary" id="payment_button">Faites plaisir à vos fesses !</div> -->
             <% end -%>
 
