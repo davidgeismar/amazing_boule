@@ -32,7 +32,7 @@ gem "stripe"
 gem 'pg'
 gem "figaro"
 
-gem 'sinatra',                  :require => nil
+gem 'sinatra', '>= 4.0.0', :require => nil
 
 
 group :development, :test do
